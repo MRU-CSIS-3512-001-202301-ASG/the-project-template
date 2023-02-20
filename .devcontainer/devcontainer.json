@@ -5,18 +5,6 @@
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-    "customizations": {
-        "vscode": {
-            "settings": {},
-            "extensions": [
-                "xdebug.php-debug",
-        	"bmewburn.vscode-intelephense-client",
-                "ritwickdey.liveserver",
-                "rangav.vscode-thunder-client",
-                "esbenp.prettier-vscode" 
-            ]
-        }
-    },
     // Features to add to the dev container. More info: https://containers.dev/features.
     // "features": {},
     // For use with PHP or Apache (e.g.php -S localhost:8080 or apache2ctl start)
@@ -26,7 +14,7 @@
     ],
     // Use 'postCreateCommand' to run commands after the container is created.
     // "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html && sudo chmod u+x \"$(pwd)\"/rewire.sh",
-    "postAttachCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\"/htdocs /var/www/html && apache2ctl start && clear"
+    "postAttachCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\"/htdocs /var/www/html && apache2ctl start"
     // Configure tool-specific properties.
     // "customizations": {},
     // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
